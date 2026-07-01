@@ -13,8 +13,6 @@
   <nav>
     <a class="logo" href="index.html"><img src="client/image/HUSDarkSmallTransparentLogo.png" alt="HeadsUp Scouting logo">HeadsUp Scouting</a>
     <ul class="nav-links">
-      <li><a href="index.html#features">Le problème</a></li>
-      <li><a href="index.html#how">Comment ça marche</a></li>
       <li><a href="request-access.html" class="nav-cta">Accès limité</a></li>
     </ul>
   </nav>
@@ -50,7 +48,7 @@
           <div class="field">
             <label>Sujet</label>
             <div class="custom-select" id="custom-select">
-              <div class="select-selected" onclick="toggleDropdown()">
+              <div class="select-selected" role="button" tabindex="0" onclick="toggleDropdown()" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); toggleDropdown(); }">
                 <span id="select-label" style="color: var(--muted);">Choisir un sujet…</span>
                 <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1 1l5 5 5-5" stroke="#7A8499" stroke-width="1.5" stroke-linecap="round"/>
