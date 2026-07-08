@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="client/css/base.css">
   <link rel="stylesheet" href="client/css/landing.css">
   <link rel="icon" href="client/image/Favicon180x180.png">
-  <script src="client/js/index.js" defer></script>
 </head>
 <body>
 
@@ -89,16 +88,21 @@
     
   <hr />
 
-  <!-- ═══ VISION SLIDESHOW ════════════════════════════════════════════ -->
-  <section class="vision-section">
-    <div class="vision-label">La vision</div>
-    <div class="vision-title">Vers où on s'en va.</div>
-    <div class="slideshow-wrapper">
-      <div class="slides" id="slides">
- 
-        <div class="slide">
-          <div class="slide-visual">
-            <div class="slide-mock slide-mock--radar">
+<!-- ═══ VISION FEATURES ═════════════════════════════════════ -->
+
+<section class="vision-section">
+  <div class="vision-label">
+    La vision
+  </div>
+  <div class="vision-title">
+    Vers une nouvelle génération de scouting.
+  </div>
+  <div class="features-grid">
+    <!-- FEATURE 1 -->
+    <div class="feature-card">
+      <div class="feature-visual">
+        <div class="feature-circle">
+          <!-- TON SVG RADAR ICI -->
               <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;">
                 <rect width="280" height="220" fill="#0F1829"/>
                 <text x="140" y="22" text-anchor="middle" font-size="11" fill="#C9A688" font-family="Inter,sans-serif" letter-spacing="1.5">PROFIL JOUEUR</text>
@@ -171,18 +175,25 @@
                 <text x="140" y="185" text-anchor="middle" font-size="13" fill="#E1E7E3" font-family="Georgia,serif">#17 — A. Tremblay</text>
                 <text x="140" y="200" text-anchor="middle" font-size="9"  fill="#D0D7DC" font-family="Inter,sans-serif">Centre · 6'1" · LHJMQ</text>
               </svg>
-            </div>
-          </div>
-          <div class="slide-text">
-            <h3>Fiches joueur standardisées</h3>
-            <p>Un profil radar par joueur, construit à partir des notes brutes de chaque scout. Comparable d'un observateur à l'autre, d'une saison à l'autre.</p>
-          </div>
         </div>
+      </div>
+      <div class="feature-content">
+        <h3>
+          Fiches joueur standardisées
+        </h3>
+        <p>
+          Transforme les notes terrain de chaque scout
+          en profils structurés et comparables,
+          d'une observation à l'autre.
+        </p>
+      </div>
+    </div>
 
-        <div class="slide">
-          <div class="slide-visual">
-            <div class="slide-mock slide-mock--verify">
-              <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;">
+    <!-- FEATURE 2 -->
+    <div class="feature-card">
+      <div class="feature-visual">
+        <div class="feature-circle">
+<svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;">
                 <rect width="280" height="220" fill="#0F1829"/>
                 <text x="140" y="22" text-anchor="middle" font-size="11" fill="#C9A688" font-family="Inter,sans-serif" letter-spacing="1.5">CHOSES À VÉRIFIER</text>
 
@@ -227,18 +238,25 @@
                 <circle cx="34" cy="190" r="4" fill="#1D6F42"/>
                 <text x="44" y="193" font-size="8" fill="#E1E7E3" font-family="Inter,sans-serif" font-weight="600">Indice de confiance: 82%</text>
               </svg>
-            </div>
-          </div>
-          <div class="slide-text">
-            <h3>Un filet de sécurité pour tes évaluations</h3>
-            <p>Chaque évaluation est comparée à ton historique pour détecter des patterns. Quand une note sort du rythme habituel, trop élevée ou instable, on te le signale.</p>
-          </div>
         </div>
- 
-        <div class="slide">
-          <div class="slide-visual">
-            <div class="slide-mock slide-mock--trend">
-              <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;">
+      </div>
+      <div class="feature-content">
+        <h3>
+          Détection d'écarts
+        </h3>
+        <p>
+          Identifie les observations inhabituelles,
+          les changements rapides et les éléments
+          qui méritent une seconde analyse.
+        </p>
+      </div>
+    </div>
+
+    <!-- FEATURE 3 -->
+    <div class="feature-card">
+      <div class="feature-visual">
+        <div class="feature-circle">
+          <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;">
                 <rect width="280" height="220" fill="#0F1829"/>
                 <text x="20" y="28" font-size="11" fill="#C9A688" font-family="Inter,sans-serif" letter-spacing="1.5">PROGRESSION</text>
                 <text x="20" y="46" font-size="13" fill="#E1E7E3" font-family="Georgia,serif">#17 — A. Tremblay</text>
@@ -265,17 +283,24 @@
                 <text x="240" y="192" text-anchor="middle" font-size="8" fill="#D0D7DC" font-family="Inter,sans-serif">Fév</text>
                 <text x="246" y="80" font-size="9" fill="#C9A688" font-family="Inter,sans-serif">82</text>
               </svg>
-            </div>
-          </div>
-          <div class="slide-text">
-            <h3>Suivi longitudinal</h3>
-            <p>La progression d'un joueur d'une observation à la suivante. Voir qui monte, qui stagne, et sur quels attributs clés évoluent le plus.</p>
-          </div>
         </div>
+      </div>
+      <div class="feature-content">
+        <h3>
+          Suivi longitudinal
+        </h3>
+        <p>
+          Visualise l'évolution d'un joueur,
+          détecte les tendances et comprends
+          où il progresse réellement.
+        </p>
+      </div>
+    </div>
 
-                <div class="slide">
-          <div class="slide-visual">
-            <div class="slide-mock slide-mock--network">
+        <!-- FEATURE 6 -->
+    <div class="feature-card">
+      <div class="feature-visual">
+        <div class="feature-circle">
               <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;">
                 <rect width="280" height="220" fill="#0F1829"/>
                 <text x="140" y="22" text-anchor="middle" font-size="11" fill="#C9A688" font-family="Inter,sans-serif" letter-spacing="1.5">COMPARAISON INTER-ORGANISATION</text>
@@ -314,18 +339,24 @@
                 <rect x="30" y="187" width="167" height="6" rx="3" fill="#1D6F42"/>
                 <text x="255" y="193" text-anchor="end" font-size="6" fill="#C9A688" font-family="Inter,sans-serif" font-weight="600">76e percentile</text>
               </svg>
-            </div>
-          </div>
-          <div class="slide-text">
-            <h3>Voir au-delà de tes propres murs</h3>
-            <p>Les évaluations sont normalisées à l'échelle de ton organisation pour réduire les biais entre scouts et mieux situer chaque joueur au-delà de ton cadre actuel.</p>
-          </div>
         </div>
- 
-        <div class="slide">
-          <div class="slide-visual">
-            <div class="slide-mock slide-mock--compare">
-              <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;">
+      </div>
+      <div class="feature-content">
+        <h3>
+          Voir au-delà de tes murs
+        </h3>
+        <p>
+         Les évaluations sont normalisées pour réduire les biais entre scouts et mieux comparer chaque joueur.
+        </p>
+      </div>
+    </div>
+
+    <!-- FEATURE 4 -->
+    <div class="feature-card">
+      <div class="feature-visual">
+        <div class="feature-circle">
+          <!-- SVG comparaison -->
+                        <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;">
                 <rect width="280" height="220" fill="#0F1829"/>
                 <text x="140" y="22" text-anchor="middle" font-size="11" fill="#C9A688" font-family="Inter,sans-serif" letter-spacing="1.5">COMPARAISON</text>
                 <!-- Deux colonnes joueurs -->
@@ -378,18 +409,25 @@
                 <rect x="146" y="208" width="8" height="4" rx="1" fill="#5D707F" fill-opacity="0.7"/>
                 <text x="158" y="213" font-size="7" fill="#D0D7DC" font-family="Inter,sans-serif">Bouchard</text>
               </svg>
-            </div>
-          </div>
-          <div class="slide-text">
-            <h3>Comparaison entre joueurs</h3>
-            <p>Deux profils côte à côte sur les mêmes attributs. Idéal pour trancher entre deux candidats ou préparer une liste de repêchage.</p>
-          </div>
         </div>
- 
-        <div class="slide">
-          <div class="slide-visual">
-            <div class="slide-mock slide-mock--list">
-              <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;">
+      </div>
+      <div class="feature-content">
+        <h3>
+          Comparaison entre joueurs
+        </h3>
+        <p>
+          Compare plusieurs profils avec
+          une structure commune pour faciliter
+          les décisions de recrutement.
+        </p>
+      </div>
+    </div>
+
+    <!-- FEATURE 5 -->
+    <div class="feature-card">
+      <div class="feature-visual">
+        <div class="feature-circle">
+          <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;">
                 <rect width="280" height="220" fill="#0F1829"/>
                 <text x="20" y="28" font-size="11" fill="#C9A688" font-family="Inter,sans-serif" letter-spacing="1.5">LISTE DE REPÊCHAGE</text>
                 <g font-family="Inter,sans-serif">
@@ -411,29 +449,22 @@
                   <text x="230" y="192" font-size="12" fill="#D0D7DC" opacity="0.6">72</text>
                 </g>
               </svg>
-            </div>
-          </div>
-          <div class="slide-text">
-            <h3>Classements organisationnels</h3>
-            <p>Tous les scouts, une seule liste. Les scores normalisés permettent de comparer des observations faites par des personnes différentes, dans des ligues différentes.</p>
-          </div>
         </div>
- 
       </div>
- 
-      <div class="slide-controls">
-        <button class="slide-dot active" onclick="goToSlide(0)" aria-label="Slide 1"></button>
-        <button class="slide-dot" onclick="goToSlide(1)" aria-label="Slide 2"></button>
-        <button class="slide-dot" onclick="goToSlide(2)" aria-label="Slide 3"></button>
-        <button class="slide-dot" onclick="goToSlide(3)" aria-label="Slide 4"></button>
-        <button class="slide-dot" onclick="goToSlide(4)" aria-label="Slide 5"></button>
-        <button class="slide-dot" onclick="goToSlide(5)" aria-label="Slide 6"></button>
+      <div class="feature-content">
+        <h3>
+          Classements organisationnels
+        </h3>
+        <p>
+          Une vision commune pour tous les scouts,
+          basée sur des évaluations normalisées.
+        </p>
       </div>
-      <p class="vision-note">Les visuels affichés sont à titre indicatif et peuvent différer du résultat final.</p>
     </div>
-  </section>
- 
-  <hr />
+  </div>
+</section>
+
+ <hr />
 
   <!-- ═══ PROBLÈME ════════════════════════════════════════════════════ -->
   <section class="section-probleme" id="probleme">
