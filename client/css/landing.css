@@ -107,11 +107,8 @@ h1 span {
    VISION FEATURES
 ══════════════════════════════════════════════════════ */
 .vision-section {
-
   background: var(--text);
-
   padding: 90px 48px;
-
 }
 
 .vision-label {
@@ -127,10 +124,10 @@ h1 span {
 
 .vision-title {
   text-align:center;
-  font-family:var(--font-display);
-  font-size:clamp(1.5rem,2.5vw,2.2rem);
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  letter-spacing: -0.02em;
   color:#0A1433;
-  letter-spacing:-.02em;
 }
 
 .features-grid {
@@ -148,22 +145,34 @@ h1 span {
 }
 
 .feature-circle {
-  width:200px;
-  height:200px;
-  border-radius:16%;
-  overflow:hidden;
-  flex-shrink:0;
-  background:#0F1829;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: -15px;
-  padding-bottom: -15px;
+  width: 280px;
+  height: 220px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+  flex-shrink: 0;
+
+  border-radius: 20px;
+  background: #0F1829;
+
+  padding: 12px;
+
+  box-shadow:
+    inset 0 0 0 1px rgba(255,255,255,.04),
+    0 8px 24px rgba(0,0,0,.18);
 }
 
 .feature-circle svg {
-  width:100%;
-  height:100%;
-  transform:scale(1.25);
+  display: block;
+
+  width: calc(100% + 24px);
+  height: calc(100% + 24px);
+
+  transform: scale(1.12);
+  transform-origin: center center;
 }
 
 .feature-content h3 {
@@ -177,6 +186,22 @@ h1 span {
   color:#3A4A5C;
   font-size:.92rem;
   line-height:1.6;
+}
+
+.visual-disclaimer {
+  width: 100%;
+  max-width: 800px;
+  margin: 48px auto 0;
+  margin-bottom: -48px auto 0;
+  text-align: center;
+}
+
+.visual-disclaimer p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--bg);
+  opacity: 0.75;
 }
 
 @media(max-width:900px){
@@ -194,8 +219,8 @@ h1 span {
     gap:20px;
   }
   .feature-circle {
-    width:90px;
-    height:90px;
+    width:150px;
+    height:120px;
   }
 }
 
@@ -228,14 +253,14 @@ h1 span {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: var(--accent);
+  color: var(--border);
   margin-bottom: 20px;
 }
 
 .probleme-title {
   max-width: 100%; /* ou 100% si tu veux vraiment toute la largeur */
   font-family: var(--font-display);
-  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
   letter-spacing: -0.02em;
   line-height: 1.2;
   color: var(--bg);
