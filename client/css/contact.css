@@ -119,7 +119,7 @@
 
 .field textarea.error,
 .field input.error,
-.custom-select.error {
+.radio-select.error {
   border: 1px solid;
   border-radius: 8px;
   padding: .8rem;
@@ -138,13 +138,6 @@
   align-items: center;
 }
 
-.char-count {
-  font-size: .78rem;
-  color: var(--border);
-  text-align: right;
-  margin-top: -10px;
-}
-
 .error-message {
   display: block;
   margin-top: -8px;
@@ -154,7 +147,7 @@
 
 /* ---------- RADIO GROUP ---------- */
 
-.custom-select {
+.radio-select {
   display: flex;
   flex-direction: column;
   gap: .85rem;

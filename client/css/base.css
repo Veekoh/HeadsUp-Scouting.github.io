@@ -52,7 +52,6 @@ nav {
   display: flex;
   align-items: center;
   gap: 10px;
-
   font-family: var(--font-display);
   font-size: 1.25rem;
   font-weight: bold;

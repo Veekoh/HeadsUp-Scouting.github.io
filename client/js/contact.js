@@ -1,12 +1,8 @@
-function updateCount(el) {
-  document.getElementById("char-count").textContent = el.value.length;
-}
-
 function setError(inputId, message) {
   const error = document.getElementById(inputId + "-error");
 
   if (inputId === "sujet") {
-    document.getElementById("custom-select").classList.add("error");
+    document.getElementById("sujet").classList.add("error");
   } else {
     document.getElementById(inputId).classList.add("error");
   }
@@ -19,7 +15,7 @@ function clearError(inputId) {
   if (error) error.textContent = "";
 
   if (inputId === "sujet") {
-    document.getElementById("custom-select").classList.remove("error");
+    document.getElementById("sujet").classList.remove("error");
   } else {
     const el = document.getElementById(inputId);
     if (el) el.classList.remove("error");
@@ -68,15 +64,7 @@ function submitForm() {
   const subject = encodeURIComponent("[Heads Up Scouting] " + sujet);
 
   const body = encodeURIComponent(
-    `Nom : ${name}
-    Courriel : ${email}
-    Sujet : ${sujet}
-
-    Message :
-    ${message}
-
-    ---
-    Envoyé depuis le formulaire contact`
+     `Nom : ${name}\nCourriel : ${email}\nSujet : ${sujet}\n\nMessage :\n${message}\n\n---\nEnvoyé depuis le formulaire contact`
   );
 
   window.location.href = `mailto:info@headsupscouting.com?subject=${subject}&body=${body}`;
