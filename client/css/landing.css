@@ -218,7 +218,7 @@ h1 span {
    SECTION PROBLÈME — titre à gauche, cards à droite
 ══════════════════════════════════════════════════════ */
 .section-probleme {
-  padding: 100px 48px;
+  padding: 64px 48px;
 }
 
 .probleme-inner {
@@ -281,7 +281,6 @@ h1 span {
 ══════════════════════════════════════════════════════ */
 .section-fiche {
   background: var(--text);
-  padding: 100px 48px;
 }
 
 .fiche-inner {
@@ -323,7 +322,7 @@ h1 span {
 ══════════════════════════════════════════════════════ */
 .section--dark {
   background: var(--text);
-  padding: 100px 48px;
+  padding: 64px 48px;
 }
 
 .section--dark .section-label {
@@ -530,7 +529,7 @@ hr {
 ══════════════════════════════════════════════════════ */
 .section-about {
   background: var(--text);
-  padding: 100px 48px;
+  padding: 64px 48px;
 }
 
 .about-inner {
@@ -619,6 +618,7 @@ hr {
   font-size: 0.93rem;
   line-height: 1.6;
   color: var(--text-dark);
+  text-align: justify;
 }
 
 /* ── Entreprise ── */
@@ -629,7 +629,7 @@ hr {
   gap: 48px;
   background: var(--dark-bg);
   border-radius: var(--radius);
-  padding: 48px;
+  padding: 24px;
 }
 
 .company-logo {
@@ -673,7 +673,6 @@ hr {
 }
 
 .company-content > p {
-  max-width: 620px;
   margin: 0 0 24px;
   font-size: 0.95rem;
   line-height: 1.7;
