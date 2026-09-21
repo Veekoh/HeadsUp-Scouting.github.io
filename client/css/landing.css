@@ -218,7 +218,7 @@ h1 span {
    SECTION PROBLÈME — titre à gauche, cards à droite
 ══════════════════════════════════════════════════════ */
 .section-probleme {
-  padding: 100px 48px;
+  padding: 64px 48px;
 }
 
 .probleme-inner {
@@ -281,7 +281,6 @@ h1 span {
 ══════════════════════════════════════════════════════ */
 .section-fiche {
   background: var(--text);
-  padding: 100px 48px;
 }
 
 .fiche-inner {
@@ -309,9 +308,6 @@ h1 span {
 }
 
 .fiche-svg {
-  background: #fff;
-  border: 1px solid #D0D7DC;
-  border-radius: var(--radius);
   padding: 16px;
 }
 
@@ -326,7 +322,7 @@ h1 span {
 ══════════════════════════════════════════════════════ */
 .section--dark {
   background: var(--text);
-  padding: 100px 48px;
+  padding: 64px 48px;
 }
 
 .section--dark .section-label {
@@ -527,6 +523,193 @@ hr {
   margin-bottom: 32px;
 }
 
+
+/* ══════════════════════════════════════════════════════
+   SECTION À PROPOS — équipe + entreprise
+══════════════════════════════════════════════════════ */
+.section-about {
+  background: var(--text);
+  padding: 64px 48px;
+}
+
+.about-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.about-header .section-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--border);
+  margin-bottom: 12px;
+}
+
+.about-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  color: #0A1433;
+}
+
+/* ── Équipe ── */
+.about-team {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.team-card {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  background: #fff;
+  border: 1px solid #D0D7DC;
+  border-radius: var(--radius);
+  padding: 28px 32px;
+}
+
+.team-photo {
+  flex-shrink: 0;
+  width: 160px;
+  height: 160px;
+  border-radius: 70px;
+  overflow: hidden;
+  /*background: #0F1829; /* fond visible tant que la photo n'est pas ajoutée */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18); 
+}
+
+.team-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%; /* garde le visage dans le cadre */
+}
+
+.team-info {
+  min-width: 0;
+}
+
+.team-info h3 {
+  margin: 0 0 4px;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: var(--text-dark);
+}
+
+.team-role {
+  margin: 0 0 12px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-dark);
+  opacity: 0.6;
+}
+
+.team-bio {
+  margin: 0;
+  font-size: 0.93rem;
+  line-height: 1.6;
+  color: var(--text-dark);
+  text-align: justify;
+}
+
+/* ── Entreprise ── */
+.about-company {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 48px;
+  background: var(--dark-bg);
+  border-radius: var(--radius);
+  padding: 24px;
+}
+
+.company-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 180px;
+  padding: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.company-logo img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.company-content {
+  min-width: 0;
+}
+
+.company-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.company-content h3 {
+  margin: 0 0 14px;
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 2.4vw, 1.9rem);
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+.company-content > p {
+  margin: 0 0 24px;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.company-facts {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 40px;
+  margin: 0 0 28px;
+  padding: 0;
+}
+
+.company-facts li {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.company-facts strong {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--text);
+}
+
+.company-facts span {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.company-content .btn-secondary {
+  display: inline-block;
+}
+
+
 /* =====================================================
    RESPONSIVE OVERRIDES
 ===================================================== */
@@ -589,6 +772,22 @@ hr {
 
   .step-img {
     max-height:480px;
+  }
+
+   .team-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .about-company {
+    gap: 36px;
+    padding: 40px;
+  }
+
+  .company-logo {
+    width: 150px;
+    height: 150px;
   }
 }
 
@@ -661,6 +860,30 @@ hr {
     order:1 !important;
     text-align:center;
   }
+
+  .section-about {
+    padding: 70px 32px;
+  }
+
+  .about-team {
+    grid-template-columns: 1fr;
+  }
+
+  .team-card {
+    flex-direction: row;
+    align-items: center;
+    gap: 28px;
+  }
+
+  .about-company {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .company-logo {
+    width: 130px;
+    height: 130px;
+  }
 }
 
 /* Mobile Landscape / Large Mobile */
@@ -719,6 +942,39 @@ hr {
     padding:60px 20px;
   }
 
+  .section-about {
+    padding: 60px 24px;
+  }
+
+  .team-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .team-photo {
+    width: min(180px, 60vw);
+    height: min(180px, 60vw);
+  }
+
+  .about-company {
+    padding: 32px 24px;
+    text-align: center;
+  }
+
+  .company-logo {
+    margin: 0 auto;
+  }
+
+  .company-content > p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .company-facts {
+    justify-content: center;
+  }
 }
 
 /* Small Mobile */
@@ -779,4 +1035,30 @@ hr {
     max-height:240px;
   }
 
+  .section-about {
+    padding: 50px 18px;
+  }
+
+  .about-inner {
+    gap: 36px;
+  }
+
+  .team-card {
+    padding: 22px;
+  }
+
+  .team-bio,
+  .company-content > p {
+    font-size: 0.88rem;
+  }
+
+  .about-company {
+    padding: 28px 20px;
+  }
+
+  .company-content .btn-secondary {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
 }
